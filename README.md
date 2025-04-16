@@ -1,6 +1,6 @@
 # Data Analyst and Prompt engineer
 
-## Skills
+## Technical Skills
 
 ## Education
 **University of Cape Coast — BSc. Computer Science**  
@@ -37,8 +37,7 @@ University of Cape Coast – Cape Coast, Ghana | November 2023 – October 2024
 ## 📊 Project Overview
 
 This interactive Power BI dashboard provides a comprehensive analysis of Netflix content including movies and TV shows. It highlights key metrics like total content, country-wise distribution, release trends, ratings, and metadata gaps.
-Acces the project on [GitHub](https://github.com/Joshua-Togeh/Netflix-dashboard)
-
+Access the project here [GitHub](https://github.com/Joshua-Togeh/Netflix-dashboard)
 ![Netflix Dashboard](asset/netflix_dashboard.jpeg)
 
 ## Contact
