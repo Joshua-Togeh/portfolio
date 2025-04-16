@@ -32,6 +32,11 @@ University of Cape Coast – Cape Coast, Ghana | November 2023 – October 2024
 
 
 ## Projects
-netflix analysis
+# 📺 Netflix Dashboard using Power BI
+
+## 📊 Project Overview
+
+This interactive Power BI dashboard provides a comprehensive analysis of Netflix content including movies and TV shows. It highlights key metrics like total content, country-wise distribution, release trends, ratings, and metadata gaps.
+
 
 ## Contact
