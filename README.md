@@ -31,7 +31,7 @@ University of Cape Coast – Cape Coast, Ghana | November 2023 – October 2024
 - **Exam Supervision:** Supported invigilation and supervised exams in computer science courses.
 
 
-## Projects
+## Featured Projects
 # Netflix Dashboard using Power BI
 
 ## 📊 Project Overview
