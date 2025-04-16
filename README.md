@@ -20,6 +20,15 @@ Dr. Maame Gyamfua Asante-Mensah Consult – Remote | October 2023 – January 20
 - **Data Cleaning:** Cleaned and transformed raw data using automated Python scripts, improving data usability and accuracy.
 - **Machine Learning:** Built and evaluated predictive machine learning models to support business decision-making.
 
+**Teaching & Research Assistant (National Service)**  
+University of Cape Coast – Cape Coast, Ghana | November 2023 – October 2024
+
+- **Literature Reviews:** Conducted comprehensive literature reviews to support faculty research initiatives.
+- **Teaching Materials:** Assisted in preparing teaching materials for Discrete Mathematics, Numerical Analysis, and Database Management.
+- **Student Support:** Provided tutoring and mentoring support to over 100 undergraduate students.
+- **Academic Writing:** Drafted academic and research papers using LaTeX (Overleaf), ensuring professional formatting and structure.
+- **Exam Supervision:** Supported invigilation and supervised exams in computer science courses.
+
 
 ### Projects
 netflix analysis
