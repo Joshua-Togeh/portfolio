@@ -1,4 +1,4 @@
-# Data Analyst
+# Data Analyst and Prompt engineer
 
 
 ## Education
