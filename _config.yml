@@ -1,8 +1,7 @@
 title: Joshua Togeh
-#logo: asset/togeh.jpg
-layout: default
+#logo: asset/togeh.jp
 description: Data Analyst and Prompt Engineer with hands-on experience in data analysis, prompt engineering, and academic research support. Proficient in Python, SQL, Power BI, Microsoft excel and LaTeX, with strong knowledge of ETL/ELT and data warehousing. Adept at leveraging critical thinking and innovative methodologies to solve real-world problems and support academic success. 
 
 
 #show_downloads: true
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
