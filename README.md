@@ -1,5 +1,6 @@
 # Data Analyst and Prompt engineer
 
+## Skills
 
 ## Education
 **University of Cape Coast — BSc. Computer Science**  
@@ -32,3 +33,5 @@ University of Cape Coast – Cape Coast, Ghana | November 2023 – October 2024
 
 ### Projects
 netflix analysis
+
+### Contact
