@@ -32,7 +32,7 @@ University of Cape Coast – Cape Coast, Ghana | November 2023 – October 2024
 
 
 ## Projects
-# 📺 Netflix Dashboard using Power BI
+# Netflix Dashboard using Power BI
 
 ## 📊 Project Overview
 
