@@ -11,7 +11,7 @@ Cape Coast, Ghana | August 2019 – August 2023
 - **Final Year Project:** Using Blockchain Technology to Enhance Cybersecurity in Supply Chain Operations
 - **Extracurricular Activities:** Participated in tech forums and workshops to enhance practical IT skills
 
-### Work experience
+## Work experience
 **Data Analyst (Contract)**  
 Dr. Maame Gyamfua Asante-Mensah Consult – Remote | October 2023 – January 2025
 
@@ -31,7 +31,7 @@ University of Cape Coast – Cape Coast, Ghana | November 2023 – October 2024
 - **Exam Supervision:** Supported invigilation and supervised exams in computer science courses.
 
 
-### Projects
+## Projects
 netflix analysis
 
-### Contact
+## Contact
