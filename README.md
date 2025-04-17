@@ -17,7 +17,7 @@
 ## 📊 Project Overview
 
 This interactive Power BI dashboard provides a comprehensive analysis of Netflix content including movies and TV shows. It highlights key metrics like total content, country-wise distribution, release trends, ratings, and metadata gaps.
-Access the project here [GitHub](https://github.com/Joshua-Togeh/Netflix-dashboard)
+Access the full project here [Netflix dashboard](https://github.com/Joshua-Togeh/Netflix-dashboard)
 ![Netflix Dashboard](asset/netflix_dashboard.jpeg)
 
 # 🧹 Data Cleaning & 📊 Exploratory Analysis using MySQL
@@ -33,7 +33,6 @@ I downloaded the layoff dataset from [Alex The Analyst's GitHub repository](http
 
 - **Exploratory Data Analysis (EDA)**:
   - Conducted EDA on the cleaned dataset to uncover insights and trends related to layoffs across different companies, industries, and time periods.
-
-Access the project here [Github](https://github.com/Joshua-Togeh/Data-cleaning-and-EDA-Using-MYSQL)
+Access the full project here [Data cleaning and EDA using MySQL](https://github.com/Joshua-Togeh/Data-cleaning-and-EDA-Using-MYSQL)
 
 ## Contact
