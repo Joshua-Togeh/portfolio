@@ -20,8 +20,19 @@ This interactive Power BI dashboard provides a comprehensive analysis of Netflix
 Access the project here [GitHub](https://github.com/Joshua-Togeh/Netflix-dashboard)
 ![Netflix Dashboard](asset/netflix_dashboard.jpeg)
 
-# Data cleaning and EDA using MySQL
-## 📊 Project Overview
+# 🧹 Data Cleaning & 📊 Exploratory Analysis using MySQL
+## 📊 Project Overview 
+I downloaded the layoff dataset from [Alex The Analyst's GitHub repository](https://github.com/AlexTheAnalyst/MySQL-YouTube-Series/blob/main/layoffs.csv) and performed the following steps:
+
+- **Data Cleaning**:
+  - Removed duplicate records to ensure data integrity.
+  - Standardized data by trimming white spaces and unifying similar entries (e.g., "Crypto" and "Cryptocurrency" standardized to "Crypto").
+  - Corrected inconsistent data types by converting the 'Date' column from text to proper date format.
+  - Handled missing and null values by updating or removing them to ensure data completeness.
+  - Removed irrelevant columns that were not necessary for the analysis.
+
+- **Exploratory Data Analysis (EDA)**:
+  - Conducted EDA on the cleaned dataset to uncover insights and trends related to layoffs across different companies, industries, and time periods.
 
 Access the project here [Github](https://github.com/Joshua-Togeh/Data-cleaning-and-EDA-Using-MYSQL)
 
