@@ -2,6 +2,14 @@
 
 ## Technical Skills
 
+- **Programming Languages:** Python, SQL  
+- **Data Analysis & Manipulation:** Pandas, NumPy, SQL, Excel, Power Query  
+- **Data Visualization:** Power BI, Matplotlib, Seaborn, Excel  
+- **Tools & Platforms:** Jupyter Notebook, Visual Studio Code, Git, GitHub  
+- **Database Management:** MySQL, PostgreSQL, SQL Server  
+- **Other Tools:** Microsoft Word, Microsoft PowerPoint  
+- **Other Skills:** Prompt Engineering, LaTeX, Research Assistance  
+
 ## Education
 **University of Cape Coast — BSc. Computer Science**  
 Cape Coast, Ghana | August 2019 – August 2023
