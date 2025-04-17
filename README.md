@@ -20,4 +20,9 @@ This interactive Power BI dashboard provides a comprehensive analysis of Netflix
 Access the project here [GitHub](https://github.com/Joshua-Togeh/Netflix-dashboard)
 ![Netflix Dashboard](asset/netflix_dashboard.jpeg)
 
+# Data cleaning and EDA using MySQL
+## 📊 Project Overview
+
+Access the project here [Github](https://github.com/Joshua-Togeh/Data-cleaning-and-EDA-Using-MYSQL)
+
 ## Contact
