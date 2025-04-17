@@ -1,15 +1,12 @@
 # Data Analyst and Prompt engineer
 
-## Technical Skills
+## Technical expertise
+Skills: Python, SQL, Excel, Power BI, Pandas, NumPy, Matplotlib, Seaborn, etc.
 
-- **Programming Languages:** Python, SQL  
-- **Data Analysis & Manipulation:** Pandas, NumPy, SQL, Excel, Power Query  
-- **Data Visualization:** Power BI, Matplotlib, Seaborn, Excel  
-- **Tools & Platforms:** Jupyter Notebook, Visual Studio Code, Git, GitHub  
-- **Database Management:** MySQL, PostgreSQL, SQL Server  
-- **Other Tools:** Microsoft Word, Microsoft PowerPoint  
-- **Other Skills:** Prompt Engineering, LaTeX, Research Assistance  
+- **Other Skills:** Prompt Engineering, LaTeX, Research Assistance
 
+## Tools/Technologies:
+VS Code, Jupyter notebook, Git, etc.
 
 ## Featured Projects
 # Netflix Dashboard using Power BI
