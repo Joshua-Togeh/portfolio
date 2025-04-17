@@ -20,7 +20,7 @@ This interactive Power BI dashboard provides a comprehensive analysis of Netflix
 Access the full project here [Netflix dashboard](https://github.com/Joshua-Togeh/Netflix-dashboard)
 ![Netflix Dashboard](asset/netflix_dashboard.jpeg)
 
-# 🧹 Data Cleaning & 📊 Exploratory Analysis using MySQL
+# 🧹 Data Cleaning & 📊 Exploratory data Analysis using MySQL
 ## 📊 Project Overview 
 I downloaded the layoff dataset from [Alex The Analyst's GitHub repository](https://github.com/AlexTheAnalyst/MySQL-YouTube-Series/blob/main/layoffs.csv) and performed the following steps:
 
