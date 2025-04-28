@@ -25,5 +25,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this),
+    })
+    .then(response => alert('Message sent successfully!'))
+    .catch(error => alert('Error sending message'));
+});
+}
