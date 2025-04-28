@@ -27,13 +27,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form Submission
-document.querySelector('form').addEventListener('submit', function(e) {
+document.querySelector('form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    fetch(this.action, {
-        method: 'POST',
-        body: new FormData(this),
-    })
-    .then(response => alert('Message sent successfully!'))
-    .catch(error => alert('Error sending message'));
+    const form = e.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    
+    try {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Sending...';
+
+        // Remove headers to prevent CORS issues
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form)
+        });
+
+        // Check if response is successful (2xx status)
+        if (response.status >= 200 && response.status < 300) {
+            // Redirect to thank-you page
+            window.location.href = form.querySelector('[name="_next"]').value;
+        } else {
+            // Get error message from response
+            const errorText = await response.text();
+            throw new Error(`Server responded with ${response.status}: ${errorText}`);
+        }
+    } catch (error) {
+        console.error('Form submission error:', error);
+        // Only show error if message didn't send
+        if (navigator.onLine) { // Check if user is online
+            alert('Message may not have sent. Please email me directly at togeh00@gmail.com');
+        }
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+    }
 });
- 
