@@ -120,24 +120,35 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-  <form action="https://formsubmit.co/togeh00@gmail.com" method="POST">
-       <input type="hidden" name="_subject" value="New portfolio message!">
-       <input type="hidden" name="_template" value="table">
-       <input type="hidden" name="_next" value="https://yourportfolio.com/thank-you.html">
-    
-    <div class="form-group">
-        <input type="text" name="name" placeholder="Your Name" required>
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <form action="https://formsubmit.co/togeh00@gmail.com" method="POST">
+            <!-- Required FormSubmit Fields -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Portfolio Message from Website">
+            <input type="hidden" name="_next" value="https://your-website-url.com/thank-you.html">
+            
+            <!-- Honeypot Anti-Spam -->
+            <input type="text" name="_honey" style="display:none">
+            
+            <!-- Error Handling -->
+            <input type="hidden" name="_autoresponse" value="Your message has been received!">
+            
+            <!-- Your Form Fields -->
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </div>
-    <div class="form-group">
-        <input type="email" name="email" placeholder="Your Email" required>
-    </div>
-    <div class="form-group">
-        <textarea name="message" placeholder="Your Message" required></textarea>
-    </div>
-    <button type="submit" class="btn">Send Message</button>
-</form>
+</section>
             
         <div class="social-links">
                 <a href="https://github.com/Joshua-Togeh" target="_blank"><i class="fab fa-github"></i></a>
