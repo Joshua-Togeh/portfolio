@@ -25,29 +25,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// Updated JavaScript
-document.querySelector('form').addEventListener('submit', function(e) {
+// Updated JavaScript with success message
+document.querySelector('form').addEventListener('submit', async (e) => {
     e.preventDefault();
     const form = e.target;
     const submitBtn = form.querySelector('button[type="submit"]');
-    
-    // Show loading state
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<div class="spinner"></div> Sending...';
+    const successMessage = document.querySelector('.success-message');
 
-    // Create temporary iframe for submission
-    const iframe = document.createElement('iframe');
-    iframe.name = 'form-submit-iframe';
-    iframe.style.display = 'none';
-    document.body.appendChild(iframe);
+    try {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<div class="spinner"></div> Sending...';
 
-    // Submit form to iframe
-    form.target = 'form-submit-iframe';
-    form.submit();
+        // Submit via iframe
+        const iframe = document.createElement('iframe');
+        iframe.name = 'formsubmit-iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+        form.target = 'formsubmit-iframe';
+        form.submit();
 
-    // Refresh page after 3 seconds
-    setTimeout(() => {
-        window.location.reload();
-    }, 3000);
+        // Show success message after 1.5s (FormSubmit processing time)
+        setTimeout(() => {
+            successMessage.style.display = 'flex';
+            form.reset(); // Clear form fields
+        }, 1500);
+
+        // Remove iframe after 3s
+        setTimeout(() => {
+            iframe.remove();
+        }, 3000);
+
+    } catch (error) {
+        alert('Error sending message');
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+    }
 });
