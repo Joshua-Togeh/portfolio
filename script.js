@@ -34,29 +34,24 @@ document.querySelector('form').addEventListener('submit', async (e) => {
     
     try {
         submitBtn.disabled = true;
-        submitBtn.innerHTML = 'Sending...';
-
-        // Remove headers to prevent CORS issues
+        submitBtn.textContent = 'Sending...';
+        
         const response = await fetch(form.action, {
             method: 'POST',
-            body: new FormData(form)
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
         });
-
-        // Check if response is successful (2xx status)
-        if (response.status >= 200 && response.status < 300) {
-            // Redirect to thank-you page
-            window.location.href = form.querySelector('[name="_next"]').value;
+        
+        if (response.ok) {
+            alert('Message sent successfully!');
+            form.reset();
         } else {
-            // Get error message from response
-            const errorText = await response.text();
-            throw new Error(`Server responded with ${response.status}: ${errorText}`);
+            throw new Error('Form submission failed');
         }
     } catch (error) {
-        console.error('Form submission error:', error);
-        // Only show error if message didn't send
-        if (navigator.onLine) { // Check if user is online
-            alert('Message may not have sent. Please email me directly at togeh00@gmail.com');
-        }
+        alert('Error sending message. Please email me directly at your@email.com');
     } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Send Message';
