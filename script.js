@@ -26,32 +26,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 // In your script.js file
-document.querySelector('form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const submitBtn = form.querySelector('button[type="submit"]');
-    
-    try {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<div class="spinner"></div> Sending...';
-        
-        const response = await fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
-
-        if (response.ok) {
-            window.location.href = form.querySelector('[name="_next"]').value;
-        } else {
-            throw new Error('Form submission failed');
-        }
-    } catch (error) {
-        alert('error sending');
-    } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
-    }
+fetch('https://formsubmit.co/ajax/jtogeh@stu.ucc.edu.gh', {
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json'      
+  },
+  body: new FormData(this)       
+})
+.then(response => response.json())
+.then(data => {
+  alert('Message sent successfully!');
+})
+.catch(error => {
+  console.error(error);
+  alert('Error sending message');
 });
