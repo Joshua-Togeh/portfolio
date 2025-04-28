@@ -25,13 +25,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-document.querySelector('form').addEventListener('submit', function(e) {
+// In your script.js file
+document.querySelector('form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    fetch(this.action, {
-        method: 'POST',
-        body: new FormData(this),
-    })
-    .then(response => alert('Message sent successfully!'))
-    .catch(error => alert('Error sending message'));
+    const form = e.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    
+    try {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<div class="spinner"></div> Sending...';
+        
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            window.location.href = form.querySelector('[name="_next"]').value;
+        } else {
+            throw new Error('Form submission failed');
+        }
+    } catch (error) {
+        alert('Error: Please contact me directly at togeh00@gmail.com');
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+    }
 });
-}
