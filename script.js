@@ -49,7 +49,7 @@ document.querySelector('form').addEventListener('submit', async (e) => {
             throw new Error('Form submission failed');
         }
     } catch (error) {
-        alert('Error: Please contact me directly at togeh00@gmail.com');
+        alert('Error: Please contact me directly at jtogeh@stu.ucc.edu.gh');
     } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Send Message';
