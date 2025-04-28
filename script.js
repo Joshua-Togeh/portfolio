@@ -53,7 +53,7 @@ document.querySelector('form').addEventListener('submit', async (e) => {
         // Remove iframe after 3s
         setTimeout(() => {
             iframe.remove();
-        }, 2000);
+        }, 3000);
 
     } catch (error) {
         alert('Error sending message');
