@@ -27,34 +27,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form Submission
-// Add this to your script.js
-document.querySelector('form').addEventListener('submit', async (e) => {
+document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
-    const form = e.target;
-    const submitBtn = form.querySelector('button[type="submit"]');
-    
-    try {
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending...';
-        
-        const response = await fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
-        
-        if (response.ok) {
-            alert('Message sent successfully!');
-            form.reset();
-        } else {
-            throw new Error('Form submission failed');
-        }
-    } catch (error) {
-        alert('Error sending message. Please email me directly at your@email.com');
-    } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
-    }
+    fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this),
+    })
+    .then(response => alert('Message sent successfully!'))
+    .catch(error => alert('Error sending message'));
 });
+ 
