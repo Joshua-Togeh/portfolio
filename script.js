@@ -27,6 +27,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form Submission
+// Add this to your script.js
 document.querySelector('form').addEventListener('submit', async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -34,7 +35,7 @@ document.querySelector('form').addEventListener('submit', async (e) => {
     
     try {
         submitBtn.disabled = true;
-        submitBtn.innerHTML = '<div class="spinner"></div> Sending...';
+        submitBtn.textContent = 'Sending...';
         
         const response = await fetch(form.action, {
             method: 'POST',
@@ -43,14 +44,15 @@ document.querySelector('form').addEventListener('submit', async (e) => {
                 'Accept': 'application/json'
             }
         });
-
+        
         if (response.ok) {
-            window.location.href = form.querySelector('[name="_next"]').value;
+            alert('Message sent successfully!');
+            form.reset();
         } else {
             throw new Error('Form submission failed');
         }
     } catch (error) {
-        alert('Error: Please contact me directly at togeh00@gmail.com');
+        alert('Error sending message. Please email me directly at your@email.com');
     } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Send Message';
