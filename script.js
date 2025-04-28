@@ -26,33 +26,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// In your script.js file
-document.querySelector('form').addEventListener('submit', async (e) => {
+// Updated JavaScript
+document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
     const form = e.target;
     const submitBtn = form.querySelector('button[type="submit"]');
     
-    try {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<div class="spinner"></div> Sending...';
-        
-        const response = await fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<div class="spinner"></div> Sending...';
 
-        if (response.ok) {
-            window.location.href = form.querySelector('[name="_next"]').value;
-        } else {
-            throw new Error('Form submission failed');
-        }
-    } catch (error) {
-        alert('Error: Please contact me directly at jtogeh@stu.ucc.edu.gh');
-    } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
-    }
+    // Create temporary iframe for submission
+    const iframe = document.createElement('iframe');
+    iframe.name = 'form-submit-iframe';
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    // Submit form to iframe
+    form.target = 'form-submit-iframe';
+    form.submit();
+
+    // Refresh page after 3 seconds
+    setTimeout(() => {
+        window.location.reload();
+    }, 3000);
 });
