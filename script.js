@@ -27,12 +27,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form Submission
-document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    fetch(this.action, {
-        method: 'POST',
-        body: new FormData(this),
-    })
-    .then(response => alert('Message sent successfully!'))
-    .catch(error => alert('Error sending message'));
+fetch('https://formsubmit.co/ajax/jtogeh@stu.ucc.edu.gh', {
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json'       
+  },
+  body: new FormData(this)             
+})
+.then(response => response.json())
+.then(data => {
+  alert('Message sent successfully!');
+})
+.catch(error => {
+  console.error(error);
+  alert('Error sending message');
 });
