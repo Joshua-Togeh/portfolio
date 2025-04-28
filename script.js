@@ -49,7 +49,7 @@ document.querySelector('form').addEventListener('submit', async (e) => {
             throw new Error('Form submission failed');
         }
     } catch (error) {
-        alert('Message sent');
+        alert('error sending');
     } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Send Message';
