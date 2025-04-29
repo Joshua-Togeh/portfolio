@@ -1,17 +1,17 @@
-// Mobile Navigation Toggle
-
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
+  const navContainer = document.querySelector('.nav-container');
 
-  // Toggle menu
-  hamburger.addEventListener('click', () => {
+  // Toggle mobile menu
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
     navLinks.classList.toggle('active');
   });
 
   // Close menu when clicking outside
   document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav-container')) {
+    if (!navContainer.contains(e.target)) {
       navLinks.classList.remove('active');
     }
   });
