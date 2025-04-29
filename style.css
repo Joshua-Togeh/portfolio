@@ -251,7 +251,26 @@ nav .container {
 }
 
 .contact-form {
-    flex: 1;
+    flex: 1; 
+    order: 2; 
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 .contact-methods {
