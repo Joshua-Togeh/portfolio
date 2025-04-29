@@ -231,21 +231,118 @@ nav .container {
 }
 
 /* contact section */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+.contact-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #222;
+}
+
 .contact-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
+  /*align-items: flex-start;*/
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .contact-info {
   flex: 1;
   min-width: 300px;
-  max-width: 45%;
+  /*max-width: 45%;*/
 }
 
-.contact-form {
+.contact-info h3 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.contact-info p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+contact-methods {
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  color: #555;
+}
+
+.social-links a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0077b5; /* LinkedIn color or custom accent */
+}
+
+form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn {
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/*.contact-form {
   flex: 1;
   min-width: 300px;
   max-width: 50%;
@@ -263,7 +360,7 @@ nav .container {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
+}*/
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -279,7 +376,7 @@ nav .container {
     }
 }
 
-.contact-methods {
+/*.contact-methods {
     margin: 30px 0;
 }
 
@@ -310,7 +407,7 @@ nav .container {
 
 .social-links a:hover {
     color: var(--primary);
-}
+}*/
 
 /* Form Styles */
 form {
