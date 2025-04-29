@@ -237,15 +237,17 @@ nav .container {
 
 .contact-container {
     display: flex;
-    gap: 50px;
-    margin-top: 40px;
+    gap: 60px;
+   align-items: flex-start;;
 }
 
 .contact-info {
     flex: 1;
+    order: 1;
     padding: 30px;
     background: #f8f9fa;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .contact-form {
