@@ -258,7 +258,7 @@ nav .container {
 
 .contact-item {
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 15px;
     margin-bottom: 50px;
 }
