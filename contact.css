@@ -17,7 +17,7 @@
   align-items: flex-start;
 }
 .contact-info {
-  flex: 1 1 45%;  /* grow/shrink, base to ~45% of container */
+  flex: 1;
   min-width: 280px;
 }
 .contact-info h3 {
