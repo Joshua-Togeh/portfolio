@@ -1,1 +1,95 @@
+/* Currently Working On Section */
+.current-projects {
+    background: #f8f9fa;
+    padding: 40px 0;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #3498db;
+}
 
+.current-projects .container {
+    text-align: center;
+}
+
+.current-projects h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.current-projects h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+}
+
+.current-projects p {
+    color: #666;
+    font-size: 1.1rem;
+    font-style: italic;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* All Projects Section */
+.all-projects {
+    padding: 50px 0;
+}
+
+.all-projects h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.all-projects h2::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #3498db;
+}
+
+/* Animation for placeholder text */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.current-projects p {
+    animation: pulse 2s infinite;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .current-projects h2 {
+        font-size: 1.8rem;
+    }
+    
+    .all-projects h2 {
+        font-size: 1.8rem;
+    }
+    
+    .current-projects p {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .
