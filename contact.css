@@ -13,9 +13,11 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  justify-content: space-between;  /* push them to the edges */
+  align-items: flex-start;
 }
 .contact-info {
-  flex: 1;
+  flex: 1 1 45%;  /* grow/shrink, base to ~45% of container */
   min-width: 280px;
 }
 .contact-info h3 {
@@ -55,7 +57,14 @@
   color: #007BFF;
 }
 
-
+form {
+  flex: 1 1 45%;   /* same sizing as .contact-info */
+  min-width: 280px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
 /* RESPONSIVE TWEAKS */
 @media (max-width: 992px) {
