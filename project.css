@@ -1,1 +1,19 @@
 
+/* ===== FOOTER ===== */
+footer {
+  background: var(--dark);
+  color: white;
+  padding: 30px 0;
+}
+
+.footercontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
