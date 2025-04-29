@@ -101,14 +101,7 @@ nav .container {
 }
 
 .hamburger {
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 20px;      
-  transform: translateY(-50%); 
-  display: block;    
-  z-index: 200;      
+  display: none;      
 }
 
 
@@ -362,6 +355,17 @@ footer {
     background: white;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+
+  .hamburger {
+    display: block;            
+    position: absolute;
+    top: 50%;
+    right: 20px;                
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 200;
   }
 
   .nav-links.active {
