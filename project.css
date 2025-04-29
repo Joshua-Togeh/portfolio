@@ -91,15 +91,20 @@
     }
 }
 
-/* Remove ALL potential spacing */
+/* Remove space between nav and first section */
 .current-projects {
-    padding: 0 !important;
-    margin: 0 !important;
-    border-top: none !important;
+    padding-top: 0;
+    margin-top: 0;
 }
 
-.current-projects .container {
-    padding-top: 10px !important;
+/* Adjust nav height if needed */
+nav {
+    height: 60px; /* Adjust this value as needed */
 }
+
+/* Ensure content starts right after nav */
+.current-projects .container {
+    padding-top: 20px; /* Small padding instead of large space */
+}}
 
     .
