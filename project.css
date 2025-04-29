@@ -1,69 +1,22 @@
-/* Currently Workings On Section */
-.current-projects {
-    background: #f8f9fa;
-    padding: 40px 0;
-    margin-bottom: 50px;
-    border-bottom: 2px solid #3498db;
-}
+/* Style only the paragraph under "Currently Working On" */
 
-.current-projects .container {
-    text-align: center;
-}
-
-.current-projects h2 {
-    font-size: 2.2rem;
-    color: #2c3e50;
-    margin-bottom: 15px;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.current-projects h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 3px;
-    background: #3498db;
-}
-
-.current-projects p {
-    color: #666;
+#projects.projects .container  p {
+    margin-top: 10px; 
     font-size: 1.1rem;
-    font-style: italic;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    display: inline-block;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-/* All Projects Section */
-.all-projects {
-    padding: 50px 0;
-}
-
-.all-projects h2 {
-    font-size: 2.2rem;
-    color: #2c3e50;
-    margin-bottom: 30px;
+    color: #666;
     text-align: center;
-    position: relative;
+    font-style: italic;
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    display: inline-block;
+    border-left: 3px solid #3498db;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.all-projects h2::before {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: #3498db;
-}
 
 /* Animation for placeholder text */
 @keyframes pulse {
