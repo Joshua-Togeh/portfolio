@@ -64,11 +64,12 @@ nav {
   z-index: 1000;
 }
 
-.nav-container {
-  display: flex;
+nav .container {
+  position: relative;
+  /*display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 0;*/
 }
 
 .logo {
@@ -102,7 +103,14 @@ nav {
 .hamburger {
   display: none;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 20px;      
+  transform: translateY(-50%); 
+  display: block;    
+  z-index: 200;      
 }
+
 
 /* ===== HERO SECTION ===== */
 .hero {
