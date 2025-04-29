@@ -41,7 +41,19 @@
   color: #007BFF;
 }
 
-
+.social-link {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.social-link a {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.social-link a:hover {
+  color: #007BFF;
+}
 
 
 
