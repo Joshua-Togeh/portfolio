@@ -258,19 +258,24 @@ nav .container {
 
 .contact-item {
     display: flex;
-    align-items: left;
-    gap: 15px;
-    margin-bottom: 50px;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 35px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(10px);
 }
 
 .contact-item i {
     font-size: 1.2rem;
     color: var(--primary);
     width: 40px;
-    text-align: center;
-    padding: 15px; 
-    background: #f8f9fa; 
-    border-radius: 8px;
+
 }
 
 .social-links {
