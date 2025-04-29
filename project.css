@@ -91,5 +91,15 @@
     }
 }
 
-@media (max-width: 480px) {
+/* Remove ALL potential spacing */
+.current-projects {
+    padding: 0 !important;
+    margin: 0 !important;
+    border-top: none !important;
+}
+
+.current-projects .container {
+    padding-top: 10px !important;
+}
+
     .
