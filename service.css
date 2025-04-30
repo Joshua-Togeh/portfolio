@@ -1,49 +1,79 @@
 /* service.css */
-/* Navigation Styles */
-nav {
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+:root {
+  --primary: #3498db;
+  --dark: #2c3e50;
+  --light: #ecf0f1;
+  --white: #ffffff;
+  --gray: #f8f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: var(--white);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+     width: 90%;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+}
+
+nav {
+  background: var(--white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .logo {
     font-size: 1.5rem;
-    font-weight: 700;
-    color: #2d3748;
+    font-weight: bold;
+    color: var(--dark);
     text-decoration: none;
 }
 
 .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
+  display: flex;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li {
+  margin-left: 30px;
 }
 
 .nav-links a {
-    color: #4a5568;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: var(--dark);
+  font-weight: 500;
+  transition: color 0.3s;
+  text-decoration: none;
 }
 
 .nav-links a:hover {
-    color: #2d3748;
+  color: var(--primary);
 }
+
 
 .hamburger {
     display: none;
-    cursor: pointer;
 }
 
 /* Services Section */
