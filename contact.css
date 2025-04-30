@@ -208,3 +208,15 @@
         padding: 0.8rem 1.5rem;
     }
 }
+
+/* Add to existing contact section CSS */
+.contact-sections {
+    padding-top: 6rem; /* Add top padding */
+    margin-top: 0; /* Remove previous margin-top */
+}
+
+@media (max-width: 768px) {
+    .contact-sections {
+        padding-top: 5rem; /* Adjust for mobile nav height */
+    }
+}
