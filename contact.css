@@ -8,7 +8,7 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: space-between;  /* push them to the edges */
+  justify-content: space-between; 
   align-items: flex-start;
 }
 .contact-info {
@@ -92,6 +92,7 @@ form {
     color: #2d3748;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    text-align: left;
     
  
 }
