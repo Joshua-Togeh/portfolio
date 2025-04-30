@@ -130,14 +130,14 @@
 .contact-sections {
     background-color: #f8fafc;
     padding: 4rem 1.5rem;
-    margin: 4rem 0;
+   
 }
 
 .contact-contents {
     max-width: 1200px;
     margin: 0 auto;
     text-align: left; /* Changed from center */
-    padding: 0 1.5rem;
+    
 }
 
 .contact-sections h2 {
