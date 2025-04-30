@@ -90,7 +90,7 @@ nav .container {
     color: #2d3748;
 }
 
-.services-section p {
+.services-section > p {
     text-align: left;
     color: #4a5568;
     max-width: 600px;
