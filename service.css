@@ -17,9 +17,9 @@
 body {
   line-height: 1.6;
   color: #333;
-  background-color: #cfcfcf;
+  background-color: var(--white);
 };
-}
+
 
 .container {
      width: 90%;
