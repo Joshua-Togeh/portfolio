@@ -60,3 +60,12 @@ document.querySelector('form').addEventListener('submit', async (e) => {
         submitBtn.textContent = 'Send Message';
     }
 });
+
+
+// service Example interactivity if needed (currently optional)
+document.querySelectorAll('.service-card').forEach(card => {
+  card.addEventListener('click', () => {
+    alert(`You clicked on: ${card.querySelector('.service-title').innerText}`);
+  });
+});
+
