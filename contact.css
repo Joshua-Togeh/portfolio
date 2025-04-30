@@ -145,6 +145,7 @@
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: left; /* Added left alignment */
+    margin-top: 25px;
 }
 
 .contact-descriptions {
@@ -153,7 +154,7 @@
     line-height: 1.6;
     margin-bottom: 2.5rem;
     max-width: 600px;
-    text-align: left; /* Changed from center */
+    text-align: left; 
 }
 
 .contact-buttons {
