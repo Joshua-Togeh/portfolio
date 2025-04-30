@@ -15,6 +15,10 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
+.contact-info p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
 #contactForm {
     flex: 1;
     background: #f8fafc;
