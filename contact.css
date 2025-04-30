@@ -85,13 +85,14 @@ form {
 .contact-contents {
     max-width: 800px;
     margin: 0 auto;
-   margin-top: 30px;
+   
 }
 
 .contact-sections h2 {
     color: #2d3748;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    margin-top: 30px;
  
 }
 
