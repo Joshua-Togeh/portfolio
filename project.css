@@ -1,25 +1,28 @@
-.projects {
+/* Projects Section Styles */
+.project {
     padding: 4rem 1.5rem;
     background-color: #f8fafc;
 }
 
-.container {
+.current-container,
+.pro-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0;
 }
 
-.container h2 {
+.project h2 {
     text-align: center;
     font-size: 2.5rem;
     color: #2d3748;
     margin-bottom: 1.5rem;
 }
 
-.container p {
+.current-container p {
     text-align: center;
     color: #718096;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    font-style: italic;
 }
 
 .project-grid {
@@ -63,6 +66,7 @@
     color: #718096;
     text-align: left;
     margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
 
 .skill-tags {
@@ -107,11 +111,11 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .projects {
+    .project {
         padding: 2rem 1rem;
     }
     
-    .container h2 {
+    .project h2 {
         font-size: 2rem;
     }
     
@@ -127,5 +131,9 @@
 @media (max-width: 480px) {
     .project-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .project-links a {
+        font-size: 0.9rem;
     }
 }
