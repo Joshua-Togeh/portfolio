@@ -3,12 +3,6 @@
   padding: 4rem 0;
   background-color: #fff;
 }
-.contact-section h1 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  matrgin-top: 25px;
-}
 
 .contact-container {
   display: flex;
@@ -86,18 +80,19 @@ form {
     background-color: #f7fafc;
     padding: 4rem 1.5rem;
     text-align: left;
-    margin-top: 30px;
 }
 
 .contact-contents {
     max-width: 800px;
     margin: 0 auto;
+   margin-top: 30px;
 }
 
 .contact-sections h2 {
     color: #2d3748;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+ 
 }
 
 .contact-descriptions {
