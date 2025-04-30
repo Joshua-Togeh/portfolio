@@ -225,7 +225,7 @@ footer {
 
 /* CTA Section Styles */
 .cta-section {
-    background-color: #2d3748;
+    background-color: #ffffff;
     padding: 4rem 1.5rem;
     text-align: center;
 }
@@ -239,7 +239,7 @@ footer {
 }
 
 .cta-section h2 {
-    color: #ffffff;
+    color: #2d3748;
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
