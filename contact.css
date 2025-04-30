@@ -130,8 +130,6 @@
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: left;
-    
- 
 }
 
 .contact-descriptions {
@@ -144,13 +142,6 @@
     margin-right: auto;
 }
 
-.contact-button:hover {
-    background-color: #3182ce;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Add to existing contact section CSS */
 .contact-buttons {
     display: flex;
     gap: 1.5rem;
