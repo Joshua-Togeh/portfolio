@@ -116,7 +116,6 @@
     }
 }
 
-
 .contact-sections {
     background-color: #ffffff;
     padding: 4rem 1.5rem;
@@ -124,15 +123,16 @@
 }
 
 .contact-contents {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    margin-top: 30px;
 }
 
 .contact-sections h2 {
     color: #2d3748;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    text-align: left;
 }
 
 .contact-descriptions {
@@ -147,14 +147,14 @@
 
 .contact-buttons {
     display: flex;
-    justify-content: center;
     gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .whatsapp-button {
     display: inline-flex;
     align-items: center;
-    gap: 0.8rem;
     background-color: #25D366;
     color: white;
     padding: 1rem 2rem;
@@ -162,6 +162,7 @@
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
+    gap: 0.8rem;
 }
 
 .whatsapp-button:hover {
@@ -175,9 +176,22 @@
 }
 
 /* Mobile Responsiveness */
-@@media (max-width: 768px) {
+@media (max-width: 768px) {
+    .contact-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .contact-button,
+    .whatsapp-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
     .contact-sections {
-        padding: 2rem 1rem;
+        padding: 3rem 1rem;
     }
     
     .contact-sections h2 {
@@ -188,9 +202,10 @@
         font-size: 1rem;
     }
     
-    .whatsapp-button {
-        padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
+    .contact-button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
     }
 }
+
 
