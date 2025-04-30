@@ -1,23 +1,19 @@
-/* service.css */
+/* style.css */
 :root {
-  --primary: #3498db;
-  --dark: #2c3e50;
-  --light: #ecf0f1;
-  --white: #ffffff;
-  --gray: #f8f9fa;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-bg-color: #f8f9fa; /* Your chosen color */
 }
 
 body {
-  line-height: 1.6;
-  color: #333;
-  background-color: var(--white);
+    background-color: var(--primary-bg-color);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add this to override any existing section backgrounds */
+section:not(.cta-section):not(.contact-section) {
+    background-color: inherit;
 }
 
 
