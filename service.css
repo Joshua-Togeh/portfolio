@@ -244,7 +244,7 @@ footer {
     margin-top: 25px;
 }
 
-.cta-section p {
+.cta-section > p {
     color: #718096;
     font-size: 1.2rem;
     margin-bottom: 2rem;
