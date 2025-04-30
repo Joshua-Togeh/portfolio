@@ -85,7 +85,8 @@ form {
 .contact-sections {
     background-color: #f7fafc;
     padding: 4rem 1.5rem;
-    text-align: center;
+    text-align: left;
+    margin-top: 30px;
 }
 
 .contact-contents {
