@@ -84,14 +84,14 @@ nav .container {
 }
 
 .services-section h1 {
-    text-align: center;
+    text-align: left;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: #2d3748;
 }
 
 .services-section > p {
-    text-align: center;
+    text-align: left;
     color: #4a5568;
     max-width: 600px;
     margin: 0 auto 3rem auto;
