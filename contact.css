@@ -112,16 +112,16 @@
     }
 }
 
+
 .contact-sections {
     background-color: #ffffff;
     padding: 4rem 1.5rem;
-    margin: 4rem 0;
+    text-align: left;
 }
 
 .contact-contents {
     max-width: 800px;
     margin: 0 auto;
-    margin-top: 30px;
 }
 
 .contact-sections h2 {
