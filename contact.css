@@ -126,29 +126,25 @@
 }
 
 
+/* Left-aligned Contact Section */
 .contact-sections {
-    background-color: #ffffff;
+    background-color: #f7fafc;
     padding: 4rem 1.5rem;
-    text-align: left;
+    margin: 4rem 0;
 }
 
 .contact-contents {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+    text-align: left; /* Changed from center */
+    padding: 0 1.5rem;
 }
 
-.contact-contents h2 {
+.contact-sections h2 {
     color: #2d3748;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    text-align: left;
-    margin-top: 30px;
-}
-.contact-contents > p {
-    color: #2d3748;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
+    text-align: left; /* Added left alignment */
 }
 
 .contact-descriptions {
@@ -157,21 +153,19 @@
     line-height: 1.6;
     margin-bottom: 2.5rem;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+    text-align: left; /* Changed from center */
 }
 
 .contact-buttons {
     display: flex;
+    justify-content: flex-start; /* Changed from center */
     gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .whatsapp-button {
     display: inline-flex;
     align-items: center;
+    gap: 0.8rem;
     background-color: #25D366;
     color: white;
     padding: 1rem 2rem;
@@ -179,7 +173,6 @@
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
-    gap: 0.8rem;
 }
 
 .whatsapp-button:hover {
@@ -188,27 +181,10 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.whatsapp-button i {
-    font-size: 1.4rem;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .contact-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .contact-button,
-    .whatsapp-button {
-        width: 100%;
-        justify-content: center;
-    }
-}
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .contact-sections {
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
     }
     
     .contact-sections h2 {
@@ -217,12 +193,17 @@
     
     .contact-descriptions {
         font-size: 1rem;
+        max-width: 100%;
     }
     
-    .contact-button {
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
+    .contact-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .whatsapp-button {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem 1.5rem;
     }
 }
-
-
