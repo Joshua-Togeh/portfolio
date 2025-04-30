@@ -233,6 +233,9 @@ footer {
 .cta-content {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
 }
 
 .cta-section h2 {
