@@ -23,7 +23,7 @@
     color: #718096;
     font-size: 1.1rem;
     font-style: italic;
-    margin-bottom: 0;
+    margin-bottom: 1px;
 }
 
 .currents-containers {
@@ -43,7 +43,7 @@
     color: #718096;
     font-size: 1.1rem;
     font-style: bold;
-    margin-bottom: 0;
+    margin-bottom: 1px;
 }
 
 .container h2 {
