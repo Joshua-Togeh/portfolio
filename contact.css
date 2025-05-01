@@ -131,7 +131,7 @@
 }
 
 
-/* Left-aligned Contact Section */
+/* Contact Sections */
 .contact-sections {
     background-color: #f8fafc;
     padding: 4rem 1.5rem;
@@ -151,6 +151,8 @@
     margin-bottom: 1.5rem;
     text-align: left; /* Added left alignment */
     margin-top: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .contact-descriptions {
@@ -158,7 +160,8 @@
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 2.5rem;
-    max-width: 600px;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: left; 
 }
 
@@ -166,6 +169,8 @@
     display: flex;
     justify-content: flex-start; /* Changed from center */
     gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .whatsapp-button {
