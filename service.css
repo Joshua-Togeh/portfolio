@@ -288,7 +288,8 @@ footer {
 }
 
 .benefits-section {
-    padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
   background-color: #f8fafc;
   text-align: center;
     
@@ -302,13 +303,10 @@ footer {
 }
 
 .benefits-list {
-    list-style: none;
-    padding: 0;
-    max-width: 1000px;
-    margin: 0 auto;
-   align-items: center;
-  display: flex;
-    flex-direction: column;
+  display: inline-block;
+  margin: 0;          
+  padding: 0;         
+  text-align: left;     
 }
 
 .benefits-list li {
