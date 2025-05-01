@@ -305,7 +305,7 @@ footer {
     padding: 0;
     max-width: 1000px;
     margin: 0 auto;
-   text-align: center;
+   align-items: center;
 }
 
 .benefits-list li {
@@ -317,8 +317,9 @@ footer {
     border-radius: 8px;
     display: flex;
     align-items: center;
+    text-align: center;
     transition: all 0.3s ease;
-  max-width: 1000px;
+    max-width: 1000px;
 }
 
 .benefits-list li:hover {
