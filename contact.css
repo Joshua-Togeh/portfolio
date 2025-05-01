@@ -19,7 +19,7 @@
 .contact-sections,
 .contact-section {
     width: 100%;
-    background: #f7fafc;
+    background: #f8fafc;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -161,7 +161,7 @@
 /* Contact Sections */
 .contact-sections {
     background-color: #f8fafc;
-    padding: 4rem 1.5rem;
+    padding: 2rem;
    
 }
 
