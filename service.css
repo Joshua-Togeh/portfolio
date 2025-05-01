@@ -290,8 +290,7 @@ footer {
 .benefits-section {
     padding: 4rem 1.5rem;
   background-color: #f8fafc;
-    max-width: 1000px;
-    margin: 0 auto;
+    
 }
 
 .benefits-section h2 {
@@ -306,6 +305,7 @@ footer {
     padding: 0;
     max-width: 1000px;
     margin: 0 auto;
+   text-align: center;
 }
 
 .benefits-list li {
