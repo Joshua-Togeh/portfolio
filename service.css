@@ -78,6 +78,8 @@ nav .container {
 
 /* Services Section */
 .services-section {
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #f8fafc;
     padding: 4rem 1.5rem;
     
@@ -286,6 +288,8 @@ footer {
 .benefits-section {
     padding: 4rem 1.5rem;
   background-color: #f8fafc;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .benefits-section h2 {
