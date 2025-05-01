@@ -1,33 +1,12 @@
-/* Container for both sections */
-.contact-container-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 1200px;
+.contact-sections-wrapper {
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
 }
-
-/* For desktop view */
-@media (min-width: 768px) {
-    .contact-container-wrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* Existing contact sections styling */
-.contact-sections,
-.contact-section {
-    width: 100%;
-    background: #f8fafc;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 /* CONTACT SECTIONs */
 .contact-section {
     background: #f8fafc;
+    margin-top: 0;
 }
 .contact-section .container {
     display: flex;
@@ -162,6 +141,7 @@
 .contact-sections {
     background-color: #f8fafc;
     padding: 2rem;
+    margin-bottom: 1.5rem;
    
 }
 
