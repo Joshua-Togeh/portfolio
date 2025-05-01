@@ -1,11 +1,11 @@
 /* CONTACT SECTIONs */
 .contact-section {
-    
+    background: #f8fafc;
 }
 .contact-section .container {
     display: flex;
     gap: 3rem;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
 }
