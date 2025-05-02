@@ -244,7 +244,7 @@ nav .container {
 }
 
 .container {
-  max-width: 1200px; /* Or whatever width you prefer */
+  max-width: 1000px; /* Or whatever width you prefer */
   margin: 0 auto;
   padding: 0 20px; /* Optional padding */
 }
