@@ -422,13 +422,12 @@ footer {
   margin-right: 8px;
 }
 
-
-/* Action Section Styles */
 /* Quick Action Buttons */
 .quick-actions {
   padding: 0 1.5rem;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: -2rem auto 3rem;
+   background: #f8fafc;
 }
 
 .action-buttons {
