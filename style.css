@@ -16,7 +16,8 @@
 
 body {
   line-height: 1.6;
-  background-color:  #f8fafc;
+  color: #333;
+  background-color:  var(--white);
 }
 
 .container {
