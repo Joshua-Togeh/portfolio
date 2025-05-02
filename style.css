@@ -264,7 +264,7 @@ nav .container {
 
 /* ===== BOTTOM CONTACT BAR ===== */
 .bottom-contact-bar {
-  background: var(--dark);
+  background: #f5f7fa;
   color: white;
   padding: 20px 0;
 }
