@@ -250,3 +250,56 @@ nav .container {
         margin: 1rem auto;
     }
 }
+
+/* Footer Styles */
+footer {
+    background: #2d3748;
+    color: white;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #4299e1;
+}
+
+.copyright-footer {
+    color: #cbd5e0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .social-links {
+        order: -1; /* Move social links above copyright on mobile */
+    }
+}
