@@ -244,9 +244,8 @@ nav .container {
 }
 
 .container {
-  max-width: 1000px; /* Or whatever width you prefer */
+  max-width: 1000px; 
   margin: 0 auto;
-  padding: 0 20px; /* Optional padding */
 }
 
 .project-grid {
