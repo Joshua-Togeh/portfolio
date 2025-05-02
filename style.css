@@ -423,66 +423,67 @@ footer {
 }
 
 /* Quick Action Buttons */
-.quick-actions {
-  padding: 0 1.5rem;
-  max-width: 1000px;
-  margin: -2rem auto 3rem;
-   background: #f8fafc;
+.qu/* Hero Section Buttons */
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
-.action-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+.secondary-actions {
+    display: flex;
+    gap: 1rem;
 }
 
-.action-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-size: 1rem;
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
-.action-btn.outline {
-  border: 2px solid #4299e1;
-  color: #4299e1;
-  background: transparent;
+.btn-primary {
+    background: #4299e1;
+    color: white;
+    border: 2px solid #4299e1;
 }
 
-.action-btn.solid {
-  background: #4299e1;
-  color: white;
-  border: 2px solid #4299e1;
+.btn-secondary {
+    background: transparent;
+    color: #4299e1;
+    border: 2px solid #4299e1;
 }
 
-.action-btn.outline:hover {
-  background: #ebf5ff;
-  transform: translateY(-2px);
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.action-btn.solid:hover {
-  background: #3182ce;
-  transform: translateY(-2px);
+.btn-primary:hover {
+    background: #3182ce;
+}
+
+.btn-secondary:hover {
+    background: #ebf5ff;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .quick-actions {
-    margin: -1rem auto 2rem;
-  }
-  
-  .action-buttons {
-    gap: 0.75rem;
-  }
-  
-  .action-btn {
-    padding: 0.7rem 1.25rem;
-    font-size: 0.9rem;
-  }
+    .secondary-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 0.8rem;
+    }
 }
