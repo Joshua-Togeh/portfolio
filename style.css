@@ -168,6 +168,8 @@ nav .container {
 .technical-skills {
     padding: 4rem 1.5rem;
     background: #f8fafc;
+     max-width: 1000px;
+     margin: 0 auto;
 }
 
 .technical-skills h2 {
@@ -175,13 +177,10 @@ nav .container {
     font-size: 2.2rem;
     color: #2d3748;
     margin-bottom: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
+   
 }
 
 .skills-container {
-    max-width: 1000px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -198,7 +197,6 @@ nav .container {
     font-size: 1.2rem;
     color: #4299e1;
     margin-bottom: 1.2rem;
-    margin-top: 20px;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #ebf5ff;
 }
