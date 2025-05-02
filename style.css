@@ -195,7 +195,7 @@ nav {
     }
 }
 
-/* About Section */
+/* About Section Styles */
 .about {
     padding: 4rem 1.5rem;
     background: var(--light-bg);
@@ -210,16 +210,10 @@ nav {
     text-align: center;
     font-size: 2rem;
     color: var(--secondary-color);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .about-content {
-    display: flex;
-    justify-content: center;
-}
-
-.about-text {
-    max-width: 800px;
     text-align: left;
 }
 
@@ -230,10 +224,12 @@ nav {
     margin-bottom: 1.5rem;
     text-align: justify;
 }
+
 .about-text p:last-child {
     margin-bottom: 0;
     font-style: italic;
     color: #666;
+}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -243,13 +239,16 @@ nav {
     
     .about h2 {
         font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
     
     .about-text p {
         font-size: 1rem;
         line-height: 1.6;
+        text-align: left;
     }
 }
+
 /* Technical Skills */
 .technical-skills {
     padding: 4rem 1.5rem;
