@@ -232,7 +232,7 @@ nav .container {
 
 /* ===== CONTACT SECTION ===== */
 .contact {
-  background: var(--white);
+  background: #f8fafc;
 }
 
 #contactForm {
