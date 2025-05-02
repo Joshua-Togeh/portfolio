@@ -422,13 +422,14 @@ footer {
   margin-right: 8px;
 }
 
- Hero Section Buttons */
+ /*Hero Section Buttons */
 .hero-actions {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     margin-top: 1.5rem;
+    background: #f8fafc;
 }
 
 .secondary-actions {
@@ -451,13 +452,13 @@ footer {
 .btn-primary {
     background: #4299e1;
     color: white;
-    border: 2px solid #4299e1;
+    border: 2px solid #f8fafc;
 }
 
 .btn-secondary {
     background: transparent;
     color: #4299e1;
-    border: 2px solid #4299e1;
+    border: 2px solid #f8fafc;
 }
 
 .btn:hover {
