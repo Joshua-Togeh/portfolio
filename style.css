@@ -424,6 +424,10 @@ footer {
 
 
 /* Action Section Styles */
+.action-section {
+  padding: 4rem 1.5rem;
+  background-color: #f8fafc;
+}
 .action-container {
   max-width: 1000px;
   margin: 0 auto;
