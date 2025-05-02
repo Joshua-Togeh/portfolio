@@ -27,6 +27,10 @@
     margin-bottom: 20px;
 }
 
+.contact-info p {
+    margin-bottom: 20px;
+}
+
 #contactForm {
     flex: 1;
     background: #f8fafc;
