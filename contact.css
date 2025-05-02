@@ -340,3 +340,42 @@ nav .container {
         padding-top: 5rem; /* Adjust for mobile nav height */
     }
 }
+
+/* Footer Styles */
+footer {
+    background: #2d3748; /* Dark background */
+    color: #ffffff;
+    padding: 2.5rem 0;
+    font-size: 1rem;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center the copyright */
+    align-items: center;
+    text-align: center;
+}
+
+.copyright-footer p {
+    margin: 0;
+    color: #cbd5e0; 
+    font-size: 0.95rem;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    footer {
+        padding: 2rem 0;
+    }
+    
+    .copyright-footer p {
+        font-size: 0.9rem;
+    }
+}
