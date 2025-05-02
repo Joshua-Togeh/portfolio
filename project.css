@@ -114,12 +114,13 @@ nav .container {
     font-size: 2.5rem;
     color: #2d3748;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 .currents-containers p {
     color: #4a5568;
     font-size: 1.1rem;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     line-height: 1.6;
 }
@@ -128,9 +129,9 @@ nav .container {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 2rem;
-    background: rgba(66, 153, 225, 0.05);
+    background: #f8fafc;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .current-container h3 {
@@ -208,7 +209,7 @@ nav .container {
 .project-links a {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     color: #4299e1;
     text-decoration: none;
     font-weight: 500;
