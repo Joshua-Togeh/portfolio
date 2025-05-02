@@ -240,10 +240,13 @@ nav .container {
 /* ===== PROJECTS SECTION ===== */
 .projects {
   background: var(--gray);
-  max-width: 1000px; /* Or whatever width you prefer */
-  margin: 0 auto;
   
 }
+
+.container {
+  max-width: 1200px; /* Or whatever width you prefer */
+  margin: 0 auto;
+  padding: 0 20px; /* Optional padding */
 }
 
 .project-grid {
