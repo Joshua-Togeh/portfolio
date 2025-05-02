@@ -106,7 +106,7 @@ nav .container {
 
 .currents-containers {
     max-width: 1000px;
-    margin: 0 auto 3rem;
+    margin: 0 auto;
     text-align: left;
 }
 
@@ -123,6 +123,7 @@ nav .container {
     max-width: 1000px;
     margin: 0 auto;
     line-height: 1.6;
+  margin-bottom: 0.5rem;
 }
 
 .current-container {
