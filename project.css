@@ -207,14 +207,14 @@ nav .container {
 
 .project-links {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 1rem;
 }
 
 .project-links a {
     display: inline-flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1.7rem;
     color: #4299e1;
     text-decoration: none;
     font-weight: 500;
