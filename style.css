@@ -303,13 +303,25 @@ nav .container {
 }
 
 .project-links a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.5em;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
   font-size: 0.9rem;
   color: var(--primary);
   text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: rgba(66, 153, 225, 0.1);
 }
+
+.project-links a:hover {
+  background-color: rgba(66, 153, 225, 0.2);
+  transform: translateY(-2px);
+}
+
+.project-links a i {
+  font-size: 0.8em;
 
 @media (max-width: 768px) {
     .project-grid {
