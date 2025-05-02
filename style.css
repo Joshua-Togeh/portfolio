@@ -292,7 +292,7 @@ nav .container {
 .skill-tags span {
     background: #e2e8f0;
     padding: 0.3rem 0.8rem;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 0.9rem;
 }
 
@@ -312,7 +312,7 @@ nav .container {
   color: var(--primary);
   text-decoration: none;
   transition: all 0.3s ease;
-  background-color: rgba(66, 153, 225, 0.1);
+
 }
 
 .project-links a:hover {
