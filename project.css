@@ -256,7 +256,7 @@ footer {
     background: #2d3748;
     color: white;
     padding: 2rem 0;
-    font-size: 0.9rem;
+    
 }
 
 .footer-container {
@@ -288,6 +288,7 @@ footer {
 }
 
 .copyright-footer {
+    margin-left: auto;
     color: #cbd5e0;
 }
 
