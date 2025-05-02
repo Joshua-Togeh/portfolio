@@ -242,10 +242,6 @@ nav .container {
   background: var(--gray);
   
 }
-.container {
-  background-color: #f8fafc;
-    padding: 4rem 1.5rem;
-}
 
 .project-grid {
   display: grid;
