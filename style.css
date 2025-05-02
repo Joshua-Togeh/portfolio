@@ -202,7 +202,7 @@ nav {
 }
 
 .about .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -225,11 +225,7 @@ nav {
     text-align: justify;
 }
 
-.about-text p:last-child {
-    margin-bottom: 0;
-    font-style: italic;
-    color: #666;
-}
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
