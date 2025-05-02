@@ -617,14 +617,14 @@ footer {
 }
 
 .btn-primary {
-    background: #4299e1;
+    background: #f8fafc;
     color: white;
     border: 2px solid #f8fafc;
 }
 
 .btn-secondary {
     background: transparent;
-    color: #4299e1;
+    color: #f8fafc;
     border: 2px solid #f8fafc;
 }
 
