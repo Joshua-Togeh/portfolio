@@ -252,6 +252,10 @@ nav {
     padding: 4rem 1.5rem;
 }
 
+.conta {
+     max-width: 1000px;
+    margin: 0 auto;
+}
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
