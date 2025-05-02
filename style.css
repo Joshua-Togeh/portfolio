@@ -164,21 +164,75 @@ nav .container {
   flex: 1;
 }
 
-.skills {
-  flex: 1;
+/* Technical Skills Section */
+.technical-skills {
+    padding: 4rem 1.5rem;
+    background: #f8fafc;
+}
+
+.technical-skills h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2d3748;
+    margin-bottom: 3rem;
+}
+
+.skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    color: #4299e1;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ebf5ff;
 }
 
 .skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
 }
 
 .skill-tags span {
-  background: var(--light);
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-size: 0.9rem;
+    background: #e2e8f0;
+    color: #2d3748;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .technical-skills {
+        padding: 2rem 1rem;
+    }
+    
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-tags {
+        gap: 0.6rem;
+    }
+    
+    .skill-tags span {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
 }
 
 /* ===== PROJECTS SECTION ===== */
