@@ -243,16 +243,14 @@ nav .container {
   
 }
 
-.container {
-  max-width: 1000px; 
-  margin: 0 auto;
-}
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
   margin-top: 5px;
+      max-width: 1000px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -261,6 +259,8 @@ nav .container {
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s;
+      max-width: 1000px;
+    margin: 0 auto;
 }
 
 .project-card:hover {
