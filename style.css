@@ -239,8 +239,7 @@ nav .container {
 
 /* ===== PROJECTS SECTION ===== */
 .projects {
-  background: var(--gray);
-  
+  background: var(--gray); 
 }
 
 .project-grid {
@@ -250,14 +249,17 @@ nav .container {
   padding: 1rem;
   max-width: 1000px;
   margin: 0 auto;
+  justify-items: center;
 }
 
 .project-card {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 .project-card:hover {
   transform: translateY(-10px);
@@ -270,12 +272,33 @@ nav .container {
 }
 
 .project-info {
-  padding: 20px;
+   padding: 1.5rem;
+   text-align: left;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: #2d3748;
+    font-size: 1.4rem;
+}
+
+.skill-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.skill-tags span {
+    background: #e2e8f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
 }
 
 .project-links {
   display: flex;
-  justify-content: space-between;
+ gap: 1rem;
   margin-top: 15px;
 }
 
@@ -286,6 +309,17 @@ nav .container {
   font-size: 0.9rem;
   color: var(--primary);
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    
+    .project-card {
+        max-width: 100%;
+    }
 }
 
 /* ===== CONTACT SECTION ===== */
