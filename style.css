@@ -288,7 +288,7 @@ nav {
     font-size: 0.9rem;
 }
 
-/* Projects Section */
+
 /* Projects Section */
 .projects {
     padding: 5rem 1.5rem;
@@ -418,37 +418,103 @@ nav {
         padding: 0.5rem 0;
     }
 }
+
+/* Contact Section */
 /* Contact Section */
 .contact {
-    padding: 4rem 1.5rem;
+    padding: 5rem 1.5rem;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2.2rem;
+    color: #2d3748;
+    margin-bottom: 2rem;
+}
+
+#contactForm {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
+    text-align: left;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: 1rem;
     border: 1px solid #e2e8f0;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    background: #4299e1;
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+.btn:hover {
+    background: #3182ce;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .success-message {
     background: #10B981;
-    color: var(--white);
-    padding: 1rem;
-    border-radius: 6px;
-    margin-bottom: 1.5rem;
-    text-align: center;
+    color: white;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact {
+        padding: 3rem 1rem;
+    }
+    
+    #contactForm {
+        padding: 1.5rem;
+    }
+    
+    .btn {
+        max-width: 100%;
+    }
 }
 
 /* Bottom Contact Bar */
