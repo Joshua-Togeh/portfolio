@@ -70,3 +70,48 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 });
 
 
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const successMessage = document.querySelector('.success-message');
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton.innerHTML;
+
+    // Show loading state
+    submitButton.innerHTML = 'Sending...';
+    submitButton.disabled = true;
+
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+    })
+    .then(response => {
+        if (response.ok) {
+            successMessage.style.display = 'block';
+            form.reset();
+            
+            // Scroll to success message at top
+            window.scrollTo({
+                top: document.querySelector('#contact').offsetTop - 50,
+                behavior: 'smooth'
+            });
+
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+        } else {
+            throw new Error('Form submission failed');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        successMessage.style.display = 'none';
+        alert('There was an error sending your message. Please try again.');
+    })
+    .finally(() => {
+        submitButton.innerHTML = originalButtonText;
+        submitButton.disabled = false;
+    });
+});
+
+
