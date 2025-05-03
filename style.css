@@ -622,20 +622,41 @@ footer {
     transform: translateY(-2px);
 }
 
+
 .success-message {
+     position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
     background: #d4edda;
     color: #155724;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     border-radius: 8px;
-    margin: 0 auto 2rem;
     max-width: 600px;
+    width: 90%;
     text-align: center;
-    display: none;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     animation: slideDown 0.5s ease;
-    position: relative;
-    top: 1rem;
+    display: none;
 }
 
+
+.success-message::before {
+    content: "✓";
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
 .contact {
     position: relative;
     padding-top: 4rem;
