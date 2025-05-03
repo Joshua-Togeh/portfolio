@@ -41,6 +41,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     })
     .then(response => {
         if (response.ok) {
+          const successMessage = document.querySelector('.success-message');
             successMessage.style.display = 'block';
             form.reset();
             
