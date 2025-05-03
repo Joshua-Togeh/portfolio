@@ -210,9 +210,9 @@ nav .container {
 }
 
 .btn-secondary {
-    background: transparent;
+    background:  #f8fafc;
     color: #2c3e50;
-    border: 2px solid;
+    border: 2px;
 }
 
 .btn-secondary:hover {
