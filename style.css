@@ -143,15 +143,6 @@ nav .container {
     margin-bottom: 0.5rem;
 }
 
-.hero p {
-    font-size: 1.3rem;
-    color: #7f8c8d;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    line-height: 1.6;
-   
-}
-
 .hero-actions {
     display: flex;
     flex-direction: column;
