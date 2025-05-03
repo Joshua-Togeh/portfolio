@@ -548,7 +548,7 @@ footer {
 .contact {
     padding: 4rem 1rem;
     background: #f8f9fa;
-    text-align: center;
+    
 }
 
 .contact .containerrr {
@@ -560,6 +560,15 @@ footer {
     font-size: 2.5rem;
     color: #2c3e50;
     margin-bottom: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  text-align: left;
+   
+}
+.success {
+  max-width: 1000px;
+    margin: 0 auto;
+  text-align: center;
 }
 
 #contactForm {
