@@ -23,43 +23,44 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Updated JavaScript with success message
-document.querySelector('form').addEventListener('submit', async (e) => {
+// success message
+document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const form = e.target;
-    const submitBtn = form.querySelector('button[type="submit"]');
     const successMessage = document.querySelector('.success-message');
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton.innerHTML;
 
-    try {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<div class="spinner"></div> Sending...';
+    // Show loading state
+    submitButton.innerHTML = 'Sending...';
+    submitButton.disabled = true;
 
-        // Submit via iframe
-        const iframe = document.createElement('iframe');
-        iframe.name = 'formsubmit-iframe';
-        iframe.style.display = 'none';
-        document.body.appendChild(iframe);
-        form.target = 'formsubmit-iframe';
-        form.submit();
-
-        // Show success message after 1.5s (FormSubmit processing time)
-        setTimeout(() => {
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+    })
+    .then(response => {
+        if (response.ok) {
             successMessage.style.display = 'flex';
-            form.reset(); // Clear form fields
-        }, 1500);
-
-        // Remove iframe after 3s
-        setTimeout(() => {
-            iframe.remove();
-        }, 3000);
-
-    } catch (error) {
-        alert('Error sending message');
-    } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
-    }
+            form.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+        } else {
+            throw new Error('Form submission failed');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        successMessage.style.display = 'none';
+        alert('There was an error sending your message. Please try again.');
+    })
+    .finally(() => {
+        submitButton.innerHTML = originalButtonText;
+        submitButton.disabled = false;
+    });
 });
-
 
 
