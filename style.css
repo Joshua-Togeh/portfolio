@@ -159,43 +159,19 @@ nav .container {
     max-width: 400px;
 }
 
-.btn {
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-   position: relative;
-    background: transparent;
-    color: #3498db;
-    border: 2px solid #3498db;
-    padding: 0.8rem 1.5rem;
-    overflow: hidden;
-}
-.btn-primary::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%; /* Adjust this value to control background width */
-    height: 100%;
-    background: #3498db;
-    z-index: -1;
-    transition: all 0.3s ease;
-}
-
-.btn-primary:hover::before {
-    width: 100%;
 }
 .btn-primary {
-    background: #3498db;
-    color: white;
-    border: 2px solid #3498db;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; 
 }
+
 
 .btn-primary:hover {
     background: #2980b9;
