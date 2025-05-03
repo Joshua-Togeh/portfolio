@@ -221,6 +221,11 @@ nav .container {
     gap: 0.8rem;
 }
 
+.success-message::before {
+    content: "✓";
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
 * Optional: Add responsive adjustment */
 @media (max-width: 768px) {
