@@ -210,14 +210,15 @@ nav .container {
 }
 
 .success-message {
-    background: #10B981;
-    color: white;
-    padding: 1rem;
-    border-radius: 6px;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    font-weight: 500;
-    display: none; /* Keep hidden by default */
+    background: #d4edda;
+    color: #155724;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem auto;
+    max-width: 600px;
+    display: none;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 
