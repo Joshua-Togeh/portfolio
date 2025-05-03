@@ -153,7 +153,7 @@ nav .container {
 .hero-actions {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     width: 100%;
     max-width: 400px;
 }
@@ -183,8 +183,9 @@ nav .container {
 
 .secondary-actions {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .btn-secondary {
@@ -215,7 +216,16 @@ nav .container {
         width: 150px;
         height: 150px;
     }
+      secondary-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .btn-secondary {
+        width: 100%;
+  }
 }
+
 
 
 
