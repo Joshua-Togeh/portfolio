@@ -169,8 +169,28 @@ nav .container {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+   position: relative;
+    background: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 0.8rem 1.5rem;
+    overflow: hidden;
+}
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%; /* Adjust this value to control background width */
+    height: 100%;
+    background: #3498db;
+    z-index: -1;
+    transition: all 0.3s ease;
 }
 
+.btn-primary:hover::before {
+    width: 100%;
+}
 .btn-primary {
     background: #3498db;
     color: white;
@@ -179,7 +199,7 @@ nav .container {
 
 .btn-primary:hover {
     background: #2980b9;
-    border-color: #2980b9;
+    
 }
 
 .secondary-actions {
