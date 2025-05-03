@@ -157,7 +157,7 @@ nav .container {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
 }
 
 .btn-primary {
@@ -172,6 +172,10 @@ nav .container {
     white-space: nowrap;
 }
 
+.btn-primary:hover {
+    background: #2980b9;
+    
+}
 .secondary-actions {
     display: flex;
     gap: 1rem;
@@ -189,7 +193,7 @@ nav .container {
     font-weight: 600;
     transition: all 0.3s ease;
     background: #f8fafc;
-    border: 2px solid;
+    border: 2px;
     color: #2c3e50;
 }
 
@@ -203,16 +207,6 @@ a.btn.btn-secondary {
     border: 2px solid #2c3e50;
 }
 
-@media (max-width: 480px) {
-    .secondary-actions {
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .btn-secondary {
-        justify-content: center;
-    }
-}
 
 @media (max-width: 768px) {
     .hero h1 {
@@ -223,7 +217,7 @@ a.btn.btn-secondary {
         font-size: 1.5rem;
     }
     
-    .hero h3 {
+    .hero p {
         font-size: 1rem;
     }
     
@@ -234,9 +228,11 @@ a.btn.btn-secondary {
       secondary-actions {
         flex-direction: column;
         gap: 0.75rem;
+        width: 100%;
     }
-    
-    .btn-secondary {
+
+  .btn-secondary {
+        justify-content: center;
         width: 100%;
   }
 }
