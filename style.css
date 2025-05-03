@@ -257,11 +257,11 @@ a.btn.btn-secondary {
     color: #4a4a4a;
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .about-text p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
 }
 
 @media (max-width: 768px) {
