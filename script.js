@@ -40,14 +40,20 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         body: new FormData(form),
     })
     .then(response => {
-        if (response.ok) {
-            successMessage.style.display = 'flex';
-            form.reset();
-            
-            // Hide message after 5 seconds
-            setTimeout(() => {
-                successMessage.style.display = 'none';
-            }, 5000);
+      if (response.ok) {
+        const successMessage = document.querySelector('.success-message');
+        successMessage.style.display = 'block';
+        form.reset();
+        
+        // Scroll to top of section
+        window.scrollTo({
+            top: document.querySelector('.contact-section').offsetTop - 50,
+            behavior: 'smooth'
+        });
+
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+        }, 5000);
         } else {
             throw new Error('Form submission failed');
         }
