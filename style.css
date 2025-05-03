@@ -551,12 +551,12 @@ footer {
     text-align: center;
 }
 
-.contact .container {
-    max-width: 800px;
+.contact .containerrr {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.contact h2 {
+.containerrr h2 {
     font-size: 2.5rem;
     color: #2c3e50;
     margin-bottom: 2rem;
