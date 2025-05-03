@@ -474,9 +474,9 @@ a.btn.btn-secondary {
         flex-direction: column;
         gap: 1rem;
     }
-.current-container {
+.containerr h2 {
         padding: 1.5rem;
-        margin: 1rem auto;
+        margin: 0 auto;
     }
 }
 
