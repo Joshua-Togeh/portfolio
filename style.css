@@ -160,12 +160,12 @@ nav .container {
 }
 
 .btn-primary {
-  background-color: #3498db;
+  background: #3498db;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
   font-weight: 500;
   transition: background-color 0.3s ease;
   white-space: nowrap; 
