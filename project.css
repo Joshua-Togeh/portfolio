@@ -127,16 +127,14 @@ nav .container {
 .current-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
-    background: #f8fafc;
-    border-radius: 10px;
-    text-align: left;
+   
 }
 
 .current-container h3 {
-    color: #2d3748;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    text-align: left;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
 }
 
 .current-container p {
