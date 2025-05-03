@@ -132,13 +132,25 @@ nav .container {
 
 .current-container h3 {
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #2c3e50;
     margin-bottom: 1.5rem;
 }
 
 .current-container p {
     font-style: italic;
+}
+
+.containerss {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.containerss h2 {
+    text-align: left;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
 }
 
 .project-grid {
