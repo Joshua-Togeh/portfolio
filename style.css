@@ -143,6 +143,9 @@ nav .container {
     margin-bottom: 0.5rem;
 }
 
+.hero p {
+  font-size: 22px
+}
 .hero-actions {
     display: flex;
     flex-direction: column;
